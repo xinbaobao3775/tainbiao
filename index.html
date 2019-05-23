@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>填表表</title>
+        <link rel="stylesheet" href="diaocha.CSS" />
+    </head>
+    <body>
+
+    <h1 id="title">鑫式调研</h1>
+    <div id="form-outer">
+      <p id="description">
+        
+        你们来我的网站干嘛勒
+      
+      </p>
+        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">姓名: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="你的名字" required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">QQ/微信：</label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="qq" id="email" class="input-field" required placeholder="QQ/微信">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age">年龄</label>
+          </div>
+        <div class="rightTab">
+          <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="年龄">
+        </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+          <label for="currentPos">你喜欢鑫宝宝吗？</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled value>喜欢</option>
+            <option  value="student">敲喜欢</option>
+            <option value="job">灰常喜欢</option>
+            <option value="learner">还好</option>
+            <option value="preferNo">也许吧</option>
+            <option value="other">不可能  不喜欢</option>
+          </select>
+        </div>
+        </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="userRating">你有认真看过鑫宝的代码吗？</label>
+            </div>
+            <div class="rightTab">
+              <ul style="list-style: none;">
+                <li class="radio"><label>当然<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>看过一点<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>除了抄一下不然看你代码干嘛<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="most-like">你去过肉肉商店吗？感觉怎么样:</label>
+            </div>
+            <div class="rightTab">
+              <select id="most-like" name="mostLike" class="dropdown">
+                <option disabled selected value>搜 不由提佛</option>
+                <option value="challenges">还不错</option>
+                <option value="projects">还好</option>
+                <option value="community">一般</option>
+                <option value="openSource">很好，可以抄一下</option>
+              </select>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="preferences">你看过我的哪些作品</label>
+            </div>
+            <div class="rightTab">
+              <ul id="preferences" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">我的作品集</label></li>
+                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">我的个人主页</li>
+                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">我的诗词网站</label></li>
+                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">鑫宝亲自讲的课</label></li>
+                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">我致敬的一个人</label></li>
+                <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">两个奇妙的四边形</label></li>
+                <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">会变色变形的正方形</label></li>
+                <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">肉肉商店</label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label for="comments">你有什么对我说的吗？</label>
+            </div>
+            <div class="rightTab">
+              <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="你对我说的话..."></textarea>
+            </div>
+          </div>
+        <button id="submit" type="submit">提交</button>
+      </form>
+    </div>
+  </body>
+</html>
